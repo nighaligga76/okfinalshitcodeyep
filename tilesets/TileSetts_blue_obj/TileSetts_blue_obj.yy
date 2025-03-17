@@ -1,27 +1,27 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"TileSet1",
+  "%Name":"TileSetts_blue_obj",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"TileSet1",
-  "out_columns":4,
+  "name":"TileSetts_blue_obj",
+  "out_columns":14,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"Tile Sets",
-    "path":"folders/Sequences/Tile Sets.yy",
+    "name":"typeodeshi_original",
+    "path":"typeodeshi_original.yyp",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"Sprite_outside_of_house_tiles",
-    "path":"sprites/Sprite_outside_of_house_tiles/Sprite_outside_of_house_tiles.yy",
+    "name":"Sprite_ts_blue_obj",
+    "path":"sprites/Sprite_ts_blue_obj/Sprite_ts_blue_obj.yy",
   },
-  "spriteNoExport":false,
+  "spriteNoExport":true,
   "textureGroupId":{
     "name":"Default",
     "path":"texturegroups/Default",
@@ -34,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":16,
+  "tile_count":192,
 }

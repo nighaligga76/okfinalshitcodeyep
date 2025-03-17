@@ -8,18 +8,18 @@
     "TileSerialiseData":[],
   },
   "name":"TileSet_dirt",
-  "out_columns":7,
+  "out_columns":17,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
     "name":"Tile Sets",
-    "path":"folders/Shaders/Tile Sets.yy",
+    "path":"folders/Sequences/Tile Sets.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"Sprite_dirt",
-    "path":"sprites/Sprite_dirt/Sprite_dirt.yy",
+    "name":"Sprite_brick",
+    "path":"sprites/Sprite_brick/Sprite_brick.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -34,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":56,
+  "tile_count":300,
 }

@@ -1,0 +1,6 @@
+scr_text( "Hello, this is Detective Bunsuk, speaking from the Juansci Department.", "blue kid")
+                    scr_text( "How may I help?.", "blue kid")
+                    scr_text( "H-hello, is this the police a-agency?", "green kid", -1)
+                    scr_text( "I really need your help right now. Somebody ruined my crops while my  goat was killed. This happened last week and now my cattle are missing!", "green kid", -1)
+                    scr_text("ywyyeyeyeyeye", "blue kid")
+                    scr_text("ok so>>", "green kid", -1)

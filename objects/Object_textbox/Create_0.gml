@@ -1,15 +1,15 @@
 depth = -999999;
 
-textbox_width = 200;
-textbox_height =  80;
-border = 10;
+textbox_width = 190;
+textbox_height =  95
+border = 12;
 line_sep = 20;
 line_width = textbox_width - border*2;  
 line_height= textbox_height - border*2;  
 
 textb_spr[0] = Sprite_textbox_drawing;
 textb_image = 0;
-textb_image_speed = 6/60;
+textb_image_speed = 3/60;
 
 //text
 page = 0;
