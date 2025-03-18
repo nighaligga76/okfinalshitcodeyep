@@ -6,7 +6,6 @@ function scr_text_defaults_for_txt(){
     textb_spr[page_number] = Sprite_textbox_drawingbrown;
     speaker_sprite[page_number] = noone;
     speaker_side[page_number] = 1;
-    snd[page_number] = Sound1;
     
 }
 
@@ -27,13 +26,13 @@ function scr_text(_text){
         case "blue kid": 
       speaker_sprite[page_number] = Sprite24;
      textb_spr[page_number] = Sprite_textbox_drawingbrown;
-        snd[page_number] = Sound1;
+      audio_play_sound(Sound1detectiveyap, 1, false)
         break;
         
         case "green kid": 
             speaker_sprite[page_number] = Sprite23;
             textb_spr[page_number] = Sprite_textbox_drawing;
-        snd[page_number] = Sound2;
+              audio_play_sound(Sound2farmeryap, 1, false)
         break;
         
         }

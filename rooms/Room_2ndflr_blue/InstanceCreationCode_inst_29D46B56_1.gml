@@ -1,4 +1,4 @@
-target_x = 736;
-target_y = 448;
-target_rm = Room_3;
-target_face = LEFT;
+target_x = 767;
+target_y = 442;
+target_rm = ROOM_2ndflr_main;
+target_face = DOWN;

@@ -1,7 +1,7 @@
 depth = -999999;
 
 textbox_width = 190;
-textbox_height =  95
+textbox_height =  85
 border = 12;
 line_sep = 20;
 line_width = textbox_width - border*2;  
@@ -30,7 +30,7 @@ option_number = 0;
 set_up = false;
 
 //sound
-snd_delay= 50;
+snd_delay= 70;
 snd_count = snd_delay;
 
 

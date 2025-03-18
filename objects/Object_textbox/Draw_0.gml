@@ -1,7 +1,7 @@
 accept_key = keyboard_check_pressed(vk_space);
 
 textbox_x = camera_get_view_x(view_camera[0]);
-textbox_y = camera_get_view_y(view_camera[0]) + 126;
+textbox_y = camera_get_view_y(view_camera[0]) + 146;
 
 //set up
 if set_up == false{
@@ -123,8 +123,8 @@ if draw_char < text_length[page]
     if _check_char == "."{
 
     text_pause_timer = text_pause_time;
-        if !audio_is_playing(snd[page]){
-        audio_play_sound(snd[page], 1, false);
+        if !audio_is_playing(Sound2farmeryap){
+        audio_play_sound(      p, 1, false);
         }
     } 
     else 
@@ -134,7 +134,7 @@ if draw_char < text_length[page]
                 snd_count++;
             } else {
         snd_count = 0;
-                audio_play_sound(snd[page], 1, false);
+                audio_play_sound(Sound2farmeryap, 1, false);
     }
             
         }
@@ -217,7 +217,7 @@ if draw_char == text_length[page] && page == page_number -1 {
     for (var op = 0; op < option_number; op++){
         //option boxx
         var _o_w = string_width(option[op]) + _op_border*2;
-        draw_sprite_ext(textb_spr[page], textb_image, _textb_x + 18, _textb_y - _op_space*option_number + _op_space*op, _o_w/textb_spr_w, (_op_space-1)/textb_spr_h, 0, c_white, 1);
+        draw_sprite_ext(textb_spr[page], textb_image, _textb_x + 25, _textb_y - _op_space*option_number + _op_space*op, _o_w/textb_spr_w, (_op_space-1)/textb_spr_h, 0, c_white, 1);
 
         //arrow
         if option_pos == op{

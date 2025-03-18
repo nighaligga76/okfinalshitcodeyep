@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Soundopendoor",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":14.18449,
+  "name":"Soundopendoor",
+  "parent":{
+    "name":"typeodeshi_original",
+    "path":"typeodeshi_original.yyp",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Soundopendoor.mp3",
+  "type":0,
+  "volume":1.0,
+}
