@@ -8,8 +8,8 @@
   "name":"obj_bluekey",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"doors and keys",
+    "path":"folders/Objects/doors and keys.yy",
   },
   "parentObjectId":{
     "name":"obj_interactable",

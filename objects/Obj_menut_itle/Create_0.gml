@@ -18,7 +18,8 @@ option[1, 1] = "Chapter 2";
 option[1, 2] = "Chapter 3";
 option[1, 3] = "Chapter 4";
 option[1, 4] = "Chapter 5";
-option[1, 5] = "Back";
+option[1, 5] = "Chapter 6";
+option[1, 6] = "Back";
 
 option[2, 0] = "Trigga";
 option[2, 1] = "Nigga";

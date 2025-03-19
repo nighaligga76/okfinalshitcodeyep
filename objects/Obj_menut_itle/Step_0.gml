@@ -19,7 +19,7 @@ switch (pos) {
 
     case 0:
         var _fade = instance_create_layer(0, 0, "Instances", Object_fader);
-                    _fade.target_room = Room_Pushblock; // Set target room
+                    _fade.target_room = Room_3; // Set target room
                     break;
     case 1:
         menu_level = 1; break;
@@ -34,21 +34,35 @@ switch (pos) {
     
     case 1:
         switch (pos) {
-            case 0: 
+            case 0:
+         var _fade = instance_create_layer(0, 0, "Instances", Object_fader);
+                  _fade.target_room = Room1st_animation; // Set target room
             break;
             
-            case 1: 
+            case 1:
+                var _fade = instance_create_layer(0, 0, "Instances", Object_fader);
+               _fade.target_room = Room_3; // Set target room    
             break;
             
             case 2:
+                var _fade = instance_create_layer(0, 0, "Instances", Object_fader);
+            _fade.target_room = Room1st_flr; // Set target room    
                 break;
             case 3:
+                var _fade = instance_create_layer(0, 0, "Instances", Object_fader);
+                        _fade.target_room = ROOM_2ndflr_main; // Set target room    
                 break;
             case 4:
+                var _fade = instance_create_layer(0, 0, "Instances", Object_fader);
+                         _fade.target_room = Room_finalmaze; // Set target
                 break;
             case 5:
-                menu_level = 0;
-            break;    
+                var _fade = instance_create_layer(0, 0, "Instances", Object_fader);
+                            _fade.target_room = Room_Pushblock; // Set target
+            break;   
+            case 6:
+                    menu_level = 0;
+                break;     
         }
         
         break;
