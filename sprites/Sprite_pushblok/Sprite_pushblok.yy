@@ -23,7 +23,7 @@
   ],
   "name":"Sprite_pushblok",
   "nineSlice":null,
-  "origin":9,
+  "origin":0,
   "parent":{
     "name":"for objects",
     "path":"folders/Sprites/for objects.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":0,
-    "yorigin":8,
+    "yorigin":0,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

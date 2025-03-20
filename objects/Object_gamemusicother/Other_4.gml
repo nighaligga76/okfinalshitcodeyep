@@ -1,0 +1,1 @@
+audio_play_sound(Sound_gmother, 0, true)

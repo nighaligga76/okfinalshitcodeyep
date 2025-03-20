@@ -13,3 +13,5 @@ targetY =y;
 
 // what state we in
 sliding = false;
+pushblockArea = false
+onIce = false 

@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"Sprite_slash",
   "bboxMode":0,
-  "bbox_bottom":86,
+  "bbox_bottom":20,
   "bbox_left":0,
-  "bbox_right":100,
+  "bbox_right":23,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -24,7 +24,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":87,
+  "height":21,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"d8d03d06-8a1e-4580-a7b5-36109eb47e3c","blendMode":0,"displayName":"default","isLocked":false,"name":"d8d03d06-8a1e-4580-a7b5-36109eb47e3c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -118,5 +118,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":101,
+  "width":24,
 }

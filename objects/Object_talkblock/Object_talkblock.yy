@@ -35,5 +35,5 @@
     "path":"sprites/Sprite_talkblock/Sprite_talkblock.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

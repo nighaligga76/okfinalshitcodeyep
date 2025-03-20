@@ -35,5 +35,5 @@
     "path":"sprites/Spr_warp_block/Spr_warp_block.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

@@ -5,6 +5,8 @@ up_key = keyboard_check(vk_up);
 down_key = keyboard_check(vk_down);
 interactKeyPressed = keyboard_check_pressed(vk_space);
 
+
+
 // Get horizontal and vertical movement
 var _hor = right_key - left_key; // 1 for right, -1 for left
 var _ver = down_key - up_key; // 1 for down, -1 for up
@@ -23,30 +25,25 @@ if instance_exists(Object_pause) {
 if (xspd != 0 || yspd != 0) {
     if (xspd > 0) { 
         face = RIGHT; 
-        sprite_index = Sprite_player_right; // Set walking sprite immediately
+        sprite_index = sprite[RIGHT]; // Set walking sprite immediately
     } else if (xspd < 0) { 
         face = LEFT; 
-        sprite_index = Sprite_player_left; // Set walking sprite immediately
+        sprite_index = sprite[LEFT]; // Set walking sprite immediately
     }
     
     if (yspd > 0) { 
         face = DOWN; 
-        sprite_index = Sprite_player_down; // Set walking sprite immediately
+        sprite_index = sprite[DOWN]; // Set walking sprite immediately
     } else if (yspd < 0) { 
         face = UP; 
-        sprite_index = Sprite_player_up; // Set walking sprite immediately
+        sprite_index = sprite[UP]; // Set walking sprite immediately
     }
+    
+    // Update the facing angle based on movement
+    facing = point_direction(0, 0, _hor, _ver);
 } else {
     // Maintain current facing direction if not moving
-    if (face == RIGHT) { 
-        sprite_index = Sprite_player_right; 
-    } else if (face == LEFT) { 
-        sprite_index = Sprite_player_left; 
-    } else if (face == UP) { 
-        sprite_index = Sprite_player_up; 
-    } else if (face == DOWN) { 
-        sprite_index = Sprite_player_down; 
-    }
+    sprite_index = sprite[face]; 
 }
 
 // Collision checks
@@ -86,25 +83,45 @@ if (instance != noone) {
                 instance_destroy(instance);
             }
             break;
+        
+        
+                case OBJECTS.BSKEY:
+            key_count += 1;
+            instance_destroy(instance);
+            audio_play_sound(Soundpickup, 1, false);
+            break;
+        case OBJECTS.BSDOOR: 
+            instance_destroy(instance);
+            break;
+        case OBJECTS.LOCKED_BSDOOR: 
+            if (key_count > 0) {
+                key_count -= 1;
+                audio_play_sound(Soundopendoor, 1, false);
+                instance_destroy(instance);
+            }
+            break;
     }
 }
 
 // Interact with push block
-if interactKeyPressed {
+if interactKeyPressed == true {
     var _checkDir = face * 90;
+    
+    //see if we find apushblock
     var _checkX = x + lengthdir_x(interactDIST, _checkDir);
     var _checkY = y + lengthdir_y(interactDIST, _checkDir);
     var _pushblockinst = instance_place(_checkX, _checkY, Object_pushblok);
     
-    if instance_exists(_pushblockinst) && !_pushblockinst.sliding {
+    if instance_exists(_pushblockinst) && _pushblockinst.sliding == false {
         _pushblockinst.sliding = true;
         _pushblockinst.face_direction = face;
     }
 }
 
 // Combat attack
-if (keyboard_check_pressed(vk_space)) {
+if (interactKeyPressed && room == Room_finalmaze) {
     var _inst = instance_create_depth(x, y, depth, Object_attack);
-    _inst.image_angle = point_direction(0, 0, _hor, _ver);
-    
+    _inst.image_angle = facing; // Set the angle of the attack based on the player's facing direction
+    _inst.damage *= damage; // Apply damage
+    audio_play_sound(Sound_slash, 1, false)
 }

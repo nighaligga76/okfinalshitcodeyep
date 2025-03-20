@@ -10,5 +10,8 @@ enum OBJECTS {
     BLUEKEY,
     REDKEY,
     ASIN, 
-    BASEMENTKEY
+    BASEMENTKEY,
+    BSKEY,
+    BSDOOR,
+    LOCKED_BSDOOR,
 }

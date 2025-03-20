@@ -19,7 +19,7 @@ switch (pos) {
 
     case 0:
         var _fade = instance_create_layer(0, 0, "Instances", Object_fader);
-                    _fade.target_room = Room_3; // Set target room
+                    _fade.target_room = Room1st_animation; // Set target room
                     break;
     case 1:
         menu_level = 1; break;
@@ -73,18 +73,30 @@ switch (pos) {
             break;
             
             case 1: 
+                 menu_level = 3
             break;
-            
-            case 2:
+                
+            case 2 :
                 break;
             case 3:
                 menu_level = 0;
             break;    
         }
-        
+    case 3:
+            switch (pos) {
+                case 0: 
+                break;
+                
+                case 1: 
+                    menu_level = 2
+                break;
+            }
+                
+            
 }
     
     if _sml != menu_level {pos = 0};
         
     op_length = array_length(option[menu_level]);
+    
 }

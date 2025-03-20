@@ -21,10 +21,13 @@ option[1, 4] = "Chapter 5";
 option[1, 5] = "Chapter 6";
 option[1, 6] = "Back";
 
-option[2, 0] = "Trigga";
-option[2, 1] = "Nigga";
+option[2, 0] = "Volume";
+option[2, 1] = "Credits";
 option[2, 2] = "Music";
 option[2, 3] = "Back";
+
+option[3, 0] = "Created by bukojuice and group 2";
+option[3, 1] = "Back";
 
 op_length = 0;
 menu_level = 0;
