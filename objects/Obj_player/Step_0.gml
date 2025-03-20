@@ -104,3 +104,10 @@ if interactKeyPressed == true
     }
     
 }
+
+// combat attack
+if (keyboard_check_pressed(vk_space)){
+var _inst = instance_create_depth(x, y, depth, Object_attack) 
+_inst.image_angle = point_direction(0, 0, _hor, _ver ) -
+    _inst.damage *= damage;
+}

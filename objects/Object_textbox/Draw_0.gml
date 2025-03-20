@@ -124,7 +124,7 @@ if draw_char < text_length[page]
 
     text_pause_timer = text_pause_time;
         if !audio_is_playing(Sound2farmeryap){
-        audio_play_sound(      p, 1, false);
+        audio_play_sound(Sound_ringring, 1, false);
         }
     } 
     else 
